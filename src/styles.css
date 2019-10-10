@@ -41,8 +41,38 @@ body {
 
 .hero {
   grid-area: hero;
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
   grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav ul {
+  width: 60%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav li {
+  background-color: blue;
+  border-radius: 1em;
+  padding: 0.5em;
+  transition: 300ms;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav li:hover {
+  background-color: purple;
 }
